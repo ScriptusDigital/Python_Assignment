@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}What Should I Watch Tonight{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='/images/Favicon_Movies.png') }}">
-
-
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ url_for('static', filename='images/favicon.png') }}?v=4">
 </head>
-<body>
- 
 
-    {% block content %}{% endblock %}
+<body class="theatre-theme">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="{{ url_for('home') }}" class="logo"> What Should I Watch Tonight?</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"
+                aria-controls="mainNav">
+
+                <span></span>
+            </button>
+            
+            <nav class="main-nav" id="mainNav">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('contact') }}">Contact</a>
+                <a href="{{ url_for('about') }}">About</a>
+
+            </nav>
+
+
+
+        </div
+    </header>
+<script src="{{url_for ('static', filename='js/script.js')}}"></script>
 </body>
-
 </html>

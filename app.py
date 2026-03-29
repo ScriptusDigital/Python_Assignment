@@ -12,6 +12,14 @@ app = Flask(__name__)
 def home():
     return render_template('index.html', title="Home")
 
+@app.route('/')
+def contact():
+    return render_template('contact.html', title="Contact")
+
+@app.route('/')
+def about():
+    return render_template('about.html', title="About")
+
 if __name__ == "__main__":
     debug_flag = str(os.environ.get("DEBUG", "False")).lower() in ("1", "true", "yes")
     app.run(debug=debug_flag)
