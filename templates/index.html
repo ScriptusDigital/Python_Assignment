@@ -1,4 +1,4 @@
-{% extends "base.html" %}  
+{% extends "base.html" %}
 
 {% block content %}
 <section class="hero">
@@ -6,11 +6,18 @@
         <div class="panel panel-hero">
             <p class="hero-kicker">Question-Based Film Recommender</p>
             <h1 class="hero-title">Find your perfect film tonight.</h1>
+
+            <p class="hero-text">
+                Answer a few questions and get personalized film recommendations based on pace, focus, runtime, and taste. Or skip the quiz and take a chance on a random recommendation.
+            </p>
+            <div class="actions actions-left">
+                <a href="{{ url_for('quiz') }}" class="btn">Build My Recommendation</a>
+                <a href="{{ url_for('random') }}" class="btn ">Take a Chance</a>
             </div>
 
 
 
     </div>
+</div>
 
-
-{% endblock %}        
+    {% endblock %}

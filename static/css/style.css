@@ -183,7 +183,54 @@ text-transform: uppercase;
     0px 2px 8 rgba(255, 255, 255, 0.18),
 }
 
+.hero-text {
+    max-width: 68ch;
+    margin-top: 0.85rem;
+    padding: 0.95rem 1rem;
+    border: 2px solid rgba(110, 167,255, 0.85);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.64);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
 
+
+/*-----------Actions-----------*/
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1rem;
+}
+
+.actions-left {
+    justify-content: flex-start;
+}
+
+/*-----------Buttons-----------*/
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.4rem;
+    border: 2px solid #4271d0;
+    border-radius: 10px;
+    background: #f0c75e;
+    color: #4271d0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer ;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
+    transition: 0.2s ease;  
+}
+
+.btn:hover {
+    background-color: #d95555;
+    border-color: #d95555;
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+    transform: translateY(-2px);
+     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+}
 
 /*-----------PANELS-----------*/
 .panel {
