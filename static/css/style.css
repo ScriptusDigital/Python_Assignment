@@ -118,3 +118,32 @@ transition: 0.2s ease;;
 }
 
 
+/*-----------MAIN PAGE LAYOUT-----------*/
+
+.site-main {
+    flex: 1;
+    padding: 0.6rem 0 2.4rem;
+}
+
+.flash-box {
+margin-bottom: 1rem;
+padding: 1rem;
+border: 2px solid #f0c75e;
+border-radius: 10px;
+background: rgba(255, 248, 220, 0.92);
+color: #241c2f;
+}   
+
+.site-footer {
+margin-top: auto;
+padding: 1rem 0;
+text-align: center;
+font-size: 0.95rem;
+color: #ffe8a3;
+background: rgba(24, 18, 33, 0.88);
+border-top: 2px solid #6ea7ff;
+}
+
+
+
+/*-----------HERO BODY-----------*/
