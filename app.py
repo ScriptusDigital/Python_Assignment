@@ -6,11 +6,15 @@ import random
 app = Flask(__name__)
 
 
-
+@app.route('/test_flash')
+def test_flash():
+    flash("This is a flash message!")
+    return render_template('index.html', title="Home")
 
 @app.route('/')
 def home():
     return render_template('index.html', title="Home")
+
 
 @app.route('/')
 def contact():
