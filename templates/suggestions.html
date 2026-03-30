@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page">
+        <div class="panel panel-section narrow">
+            <p class="eyebrow">Suggest a Movie</p>
+            <h1 class="section-title">Add a film suggestion</h1>
+<p>Know a film that should be considered for the app? Add it below with its genre and a short 
+    reason for why it belongs in the recommendation pool.
+</p>
+</div>
+
+<form method="POST" class="contact-form panel panel-pad narrow">
+    <label for="title">Movie Title:</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="genre">Genre:</label>
+    <input type="text" id="genre" name="genre" required>
+
+    <label for="reason">Why should we add this movie?</label>
+    <textarea id="reason" name="reason" rows="4" required></textarea>
+
+    <button type="submit" class="btn">Submit Suggestion</button>
+</form>
+
+{% if suggested_movies %}
+<div class="panel panel-section narrow suggestions-list-panel">
+<p class="eyebrow">Recent Suggestions</p>
+<h2 class="section-title">What others have suggested</h2>
+
+<div class="feature-grid">
+    {% for movie in suggested_movies %}
+    <article class="feature-card">
+        <h3>{{ movie.title }}</h3>
+        <p><strong>Genre:</strong> {{ movie.genre }}</p>
+        <p>{{ movie.reason }}</p>
+    </article>
+    {% endfor %}
+</div>
+</div>
+{% else %}
+<div class="panel panel-section narrow suggestions-list-panel">
+<p>No suggestions yet. Be the first to suggest a movie!</p>
+</div>
+
+{% endif %}
+</section>
+
+    {% endblock %}

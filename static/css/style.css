@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Exo+2:wght@500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +32,15 @@ text-decoration: none;}
     margin:0 auto;
 }
 
+.narrow {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.page {
+    padding-top: 1rem;
+}
+
 /*-----------HEADER BUILDER-----------*/
 .site-header {
  position: sticky;
@@ -51,7 +62,7 @@ backdrop-filter: blur(8px);
 
 .logo {
 max-width: 70%;
-font-family: sans-serif;
+font-family: "Bungee", sans-serif;
 font-size: 1.4rem;
 line-height: 1.1;
 color: #d95555;
@@ -105,7 +116,7 @@ letter-spacing: 0.02em;
 border-radius: 10px;
 background: rgba(27, 43, 94, 0.94);
 color: #ffe08a;
-font-family: 'Courier New', Courier, monospace;
+font-family: "Exo 2", sans-serif;
 font-size: 0.88rem;
 text-transform: uppercase;
 transition: 0.2s ease;;
@@ -126,7 +137,6 @@ transition: 0.2s ease;;
 }
 
 .flash-box {
-margin-bottom: 1rem;
 padding: 1rem;
 border: 2px solid #f0c75e;
 border-radius: 10px;
@@ -158,6 +168,7 @@ max-width: 1040px;
     text-align: left;
 }
 
+.eyebrow,
 .hero-kicker {
 display: inline-block;
 margin-bottom: 0.8rem;
@@ -173,14 +184,14 @@ text-transform: uppercase;
 
 .hero-title {
     max-width: 22ch;
-    font-family: sans-serif;
+    font-family: "Bungee", sans-serif;  
     color: #d95555;
     font-size: clamp(2.4rem, 5vw, 4.8rem);
     line-height: 1.02;
     text-transform: uppercase;
     text-shadow: 
     0px 2px 0 rgba(255, 255, 255, 0.18),
-    0px 2px 8 rgba(255, 255, 255, 0.18),
+    0px 2px 8px rgba(255, 255, 255, 0.18);
 }
 
 .hero-text {
@@ -215,8 +226,8 @@ text-transform: uppercase;
     border-radius: 10px;
     background: #f0c75e;
     color: #4271d0;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.9rem;
+font-family: "Bungee", sans-serif;
+    font-size: 1.5rem;
     text-transform: uppercase;
     cursor: pointer ;
     box-shadow: 0 6px 14px rgba(0, 0, 0, 0.16);
@@ -234,7 +245,6 @@ text-transform: uppercase;
 
 /*-----------PANELS-----------*/
 .panel {
-
     border: 2px solid #6ea7ff;
     border-radius: 14px;
     background: rgba(255, 249, 247, 0.80); 
@@ -247,9 +257,15 @@ text-transform: uppercase;
     padding: 1rem 1.15rem 1.15rem;
 }
 
+.panel-pad {
+    padding: 1.25rem;
+}
 .panel-section {
-    padding: 1.15;
- 
+    padding: 1rem 1.2rem;
+    margin-bottom: 1.1rem
+}
+.suggestions-list-panel {
+    margin-top: 1rem;
 }
 
 /*-----------GRIDS-----------*/
@@ -270,7 +286,7 @@ padding: 1rem;
 
 .feature-card h2 {
 text-transform: uppercase;
-font-family: sans-serif;
+font-family: "Bungee", sans-serif;
     font-size: 1rem;
     color: #d95555;
     margin-bottom: 0.5rem;
@@ -286,6 +302,55 @@ font-family: sans-serif;
 @media (max-width: 900px) {
     .feature-grid,
     .results-layout {
-        grid-template-columns: 1fr;;
+        grid-template-columns: 1fr;
     }
+
+
+}
+
+
+
+
+
+/*-----------Shared Text element-----------*/
+.eyebrow,
+.hero-kicker,
+.section-title {
+font-family: "Bungee", sans-serif;
+}
+
+
+.section-title {
+    color: #d95555;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    line-height: 1.04;;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    text-shadow: 0 1px 6px rgba(255, 255, 255, 0.16);;
+}
+
+
+
+/*-----------Form elements-----------*/
+.contact-form {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+   width: 100%;
+   padding: 0.95rem 1rem;
+border: 2px solid #6ea7ff;
+border-radius: 10px;
+background: rgba(255, 255, 255, 0.72);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #d95555;
 }

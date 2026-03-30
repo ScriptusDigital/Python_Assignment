@@ -1,25 +1,41 @@
 import os
 from dotenv import load_dotenv
-from flask import Flask, render_template, request, flash 
+from flask import Flask, redirect, render_template, request, flash, url_for 
 import random
 
+load_dotenv()
+
 app = Flask(__name__)
+app.secret_key = os.environ.get("SECRET_KEY", "default_secret_key")
 
-
-@app.route('/test_flash')
-def test_flash():
-    flash("This is a flash message!")
-    return render_template('index.html', title="Home")
+suggested_movies = []
 
 @app.route('/')
 def home():
     return render_template('index.html', title="Home")
 
 
-@app.route('/contact')
-def contact():
-    return render_template('contact.html', title="Contact")
+@app.route('/suggestions', methods=['GET', 'POST'])
+def suggestions():
+    if request.method == 'POST':
+        title = request.form.get('title')
+        genre = request.form.get('genre')
+        reason = request.form.get('reason')
 
+        if not title or not genre or not reason:
+            flash("Please fill in all fields.")
+            return redirect(url_for('suggestions'))
+        
+        suggested_movies.append({
+            'title': title,
+            'genre': genre,
+            'reason': reason
+        })
+
+        flash("Thank you for your suggestion!")
+        return redirect(url_for('suggestions'))
+    return render_template('suggestions.html', title="Suggest a Movie", suggested_movies=suggested_movies)  
+    
 @app.route('/about')
 def about():
     return render_template('about.html', title="About")
