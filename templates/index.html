@@ -4,37 +4,38 @@
 <section class="hero">
     <div class="hero-copy hero-left">
         <div class="panel panel-hero">
-            <p class="hero-kicker">Question-Based Film Recommender</p>
+            <p class="kicker">Question-Based Film Recommender</p>
             <h1 class="hero-title">Find your perfect film tonight.</h1>
 
             <p class="hero-text">
-                Answer a few questions and get personalized film recommendations based on pace, focus, runtime, and taste. Or skip the quiz and take a chance on a random recommendation.
+                Answer a few questions and get personalized film recommendations based on pace, focus, runtime, and
+                taste. Or skip the quiz and take a chance on a random recommendation.
             </p>
             <div class="actions actions-left">
                 <a href="{{ url_for('quiz') }}" class="btn">Build My Recommendation</a>
                 <a href="{{ url_for('random') }}" class="btn ">Take a Chance</a>
             </div>
 
-<div class="panel feature-wrap">
-    <div class="feature-grid">
-        <article class="feature-card">
-<h2>Quick Interactive Quiz</h2>
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
+            <div class="panel feature-wrap">
+                <div class="feature-grid">
+                    <article class="feature-card">
+                        <h2>Quick Interactive Quiz</h2>
+                        <p>Five guided questions appear one at a time, so the process stays simple, clear, and easy to use</p>
+                    </article>
 
-             <article class="feature-card">
-<h2>Quick Interactive Quiz</h2>
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
+                    <article class="feature-card">
+                        <h2>Match Logic</h2>
+                        <p>Your answers are compared against the film library to find the strongest overall fit for you night.</p>
+                    </article>
 
-             <article class="feature-card">
-<h2>Quick Interactive Quiz</h2>
-<p>lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </article>
+                    <article class="feature-card">
+                        <h2>Take a Chance</h2>
+                        <p>Skip the quiz and get a random film pick and let the app to decide for you.</p>
+                    </article>
 
-          </div>
-       </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </section>
-    {% endblock %}
+{% endblock %}

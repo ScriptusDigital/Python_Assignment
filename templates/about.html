@@ -1,5 +1,42 @@
 {% extends "base.html" %}
-
 {% block content %}
+
+<section class="page">
+    <div class="panel panel-section narrow">
+        <p class="kicker">About</p>
+        <h1 class="section-title">About the project</h1>
+         <p> What Should I Watch Tonight? is a Flash web application that
+            recommends films based on a short interactive quiz. It combines
+            front-end quiz interaction with server-side recommendation logic
+            in Python.
+        </p>
+        </div>
+        
+
+        <div class="panel panel-pad narrow text-block">
+        <h2 class="card-title">How it works</h2>
+
+    <p>    
+        The user answers five multiple-choice questions about mood, pace, fous, runtime, and genre. </p>
+
+
+    <p>    
+        Each film in the application is stored in Python as structured data. When the user submits the quiz, the application compares ther answers with the stored film attributes and returns the closest match.</p>
+
+        <p> The site also includes a random film option for users who want to skip the quiz and let the application make the choice for them.</p>
+
+        <p> In addition, users can submit film suggestions through a for. These suggestions are processed in Python and displayed back on the page, demonstrating form handing, POST request processing, and dynamic content rendering with Flask.
+
+        </p>
+
+        </div>
+   
+            
+    
+</section>">
+
+
+
+
 
     {% endblock %}
