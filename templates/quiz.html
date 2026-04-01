@@ -7,7 +7,7 @@
             <p id="progressText" class="progress-text">Question 1 of 5</p>
 
 
-
+<!-- QUESTION Card 1-->
 <form id="quizForm">
 <div class="question-card active">
     <h1>What kind of mood are you in tonight?</h1>
@@ -23,9 +23,12 @@
 </div>
 </div>
 
+
+<!-- QUESTION Card 2
+ -->
 <div class="question-card">
-    <h1>Test questions 2</h1>
-<p class="question-intro">This will help us find the perfect movie for you.</p>
+    <h2>What pace are you looking for?</h2>
+<p class="question-intro">Some evenings call for come; others need a bit of speed!</p>
 <div class="answer-group">
     <label><input type="radio" name="pace" value="slow">I want a slow-paced movie</label>
     <label><input type="radio" name="pace" value="balanced">I want a balanced movie</label>
@@ -35,25 +38,67 @@
 
 
 <div class="actions actions-end">
-    <button type="button" class="btn next-btn">Build My Recommendation</button>
+
     <button type="button" class="btn back-btn">Back</button>
+        <button type="button" class="btn next-btn">Next</button>
 </div>
 </div>
 
+
+<!-- QUESTION Card 3-->
 <div class="question-card">
-    <h1>Test questions 3</h1>
-<p class="question-intro">This will help us find the perfect movie for you.</p>
+    <h2>How much brain power do you have tonight?</h2>
+<p class="question-intro">This affects how layered or accessible the movie will be.</p>
 <div class="answer-group">
-    <label><input type="radio" name="pace" value="slow">I want a slow-paced movie</label>
-    <label><input type="radio" name="pace" value="balanced">I want a balanced movie</label>
-    <label><input type="radio" name="pace" value="fast">I want a fast-paced movie</label>
-    <label><input type="radio" name="pace" value="intense">I want an intense movie</label>           
+    <label><input type="radio" name="focus" value="light">I want a light-hearted movie</label>
+    <label><input type="radio" name="focus" value="medium">I want a moderate movie</label>
+    <label><input type="radio" name="focus" value="focused">I want a focused movie</label>
+     <label><input type="radio" name="focus" value="layered">I want a layered movie</label>
 </div>
 
 
 <div class="actions actions-end">
-    <button type="submit" class="btn submit-btn">Build My Recommendation</button>
+
     <button type="button" class="btn back-btn">Back</button>
+        <button type="button" class="btn next-btn">Next</button>
+</div>
+</div>
+
+<!-- QUESTION Card 4-->
+ <div class="question-card">
+    <h2>How long a film are you up for?</h2>
+<p class="question-intro">How much time do you have available?</p>
+<div class="answer-group">
+    <label><input type="radio" name="focus" value="short">I want a short movie</label>
+    <label><input type="radio" name="focus" value="medium">I want a medium-length movie</label>
+    <label><input type="radio" name="focus" value="long">I want a long movie</label>
+     <label><input type="radio" name="focus" value="medium">Length doesn't matter</label>
+</div>
+
+
+<div class="actions actions-end">
+
+    <button type="button" class="btn back-btn">Back</button>
+        <button type="button" class="btn next-btn">Next</button>
+</div>
+</div>
+<!-- QUESTION Card 5-->
+
+<div class="question-card">
+    <h2>What kind of pick do you want</h2>
+<p class="question-intro">This shapes whether the result should feel familar, acclaimed, or a bit more offbeat </p>
+<div class="answer-group">
+    <label><input type="radio" name="pick_type" value="crowd">A crowd-pleaser</label>
+    <label><input type="radio" name="pick_type" value="critics">Critically acclaimed</label>
+    <label><input type="radio" name="pick_type" value="hidden">I want a hidden gem</label>
+    <label><input type="radio" name="pick_type" value="crowd">Surprise me</label>           
+</div>
+
+
+<div class="actions actions-end">
+   
+    <button type="button" class="btn back-btn">Back</button>
+     <button type="submit" class="btn submit-btn">Build My Recommendation</button>
 </div>
 </div>
 
