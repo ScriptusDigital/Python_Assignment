@@ -5,6 +5,10 @@
     <div class="panel quiz-shell">
           <div class="quiz-top">
             <p id="progressText" class="progress-text">Question 1 of 5</p>
+            <div class="progress-track">
+                <div id="progressBar" class="progress-fill"></div>
+
+            </div>
 
 
 <!-- QUESTION Card 1-->
@@ -69,10 +73,10 @@
     <h2>How long a film are you up for?</h2>
 <p class="question-intro">How much time do you have available?</p>
 <div class="answer-group">
-    <label><input type="radio" name="focus" value="short">I want a short movie</label>
-    <label><input type="radio" name="focus" value="medium">I want a medium-length movie</label>
-    <label><input type="radio" name="focus" value="long">I want a long movie</label>
-     <label><input type="radio" name="focus" value="medium">Length doesn't matter</label>
+    <label><input type="radio" name="runtime" value="short">I want a short movie</label>
+    <label><input type="radio" name="runtime" value="medium">I want a medium-length movie</label>
+    <label><input type="radio" name="runtime" value="long">I want a long movie</label>
+     <label><input type="radio" name="runtime" value="medium">Length doesn't matter</label>
 </div>
 
 
@@ -91,7 +95,7 @@
     <label><input type="radio" name="pick_type" value="crowd">A crowd-pleaser</label>
     <label><input type="radio" name="pick_type" value="critics">Critically acclaimed</label>
     <label><input type="radio" name="pick_type" value="hidden">I want a hidden gem</label>
-    <label><input type="radio" name="pick_type" value="crowd">Surprise me</label>           
+    <label><input type="radio" name="pick_type" value="surpise">Surprise me</label>           
 </div>
 
 
@@ -101,11 +105,11 @@
      <button type="submit" class="btn submit-btn">Build My Recommendation</button>
 </div>
 </div>
-
-
-
-
 </form>
+
+<p id="quizMessage" class="quiz-message"></p>
+
+
 </div>
 </section>
 
