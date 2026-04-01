@@ -1,5 +1,60 @@
 {% extends "base.html" %}
 
 {% block content %}
+<section class="page">
+    <div class="panel quiz-shell">
+          <div class="quiz-top">
+            <p id="progressText" class="progress-text">Question 1 of 5</p>
+
+
+
+<form id="quizForm">
+<div class="question-card active">
+    <h1>What kind of mood are you in tonight?</h1>
+<p class="question-intro">This will help us find the perfect movie for you.</p>
+<div class="answer-group">
+    <label><input type="radio" name="mood" value="laugh">I want to laugh</label>
+    <label><input type="radio" name="mood" value="excited">I want to be excited</label>
+    <label><input type="radio" name="mood" value="emotional">I want something emotional</label>
+    <label><input type="radio" name="mood" value="thoughtful">I want something thoughtful</label>           
+</div>
+<div class="actions actions-end">
+    <button type="button" class="btn next-btn">Next</button>
+</div>
+</div>
+
+<div class="question-card">
+    <h1>Test questions 2</h1>
+<p class="question-intro">This will help us find the perfect movie for you.</p>
+<div class="answer-group">
+    <label><input type="radio" name="pace" value="slow">I want a slow-paced movie</label>
+    <label><input type="radio" name="pace" value="balanced">I want a balanced movie</label>
+    <label><input type="radio" name="pace" value="fast">I want a fast-paced movie</label>
+    <label><input type="radio" name="pace" value="intense">I want an intense movie</label>           
+</div>
+
+
+<div class="actions actions-end">
+    <button type="submit" class="btn submit-btn">Build My Recommendation</button>
+    <button type="button" class="btn back-btn">Back</button>
+</div>
+</div>
+
+
+
+
+</form>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
 
     {% endblock %}
