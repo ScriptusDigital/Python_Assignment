@@ -63,7 +63,7 @@ PROFILE_LABELS = {
         "crowd":"Leaning toward a crowd plased",
         "critics": "Leaning toward a critic's choice",
         "hidden": "Interested in a hidden gem",
-        "suprpise": "Open to anything "
+        "surprise": "Open to anything "
     },
 
 }
@@ -97,16 +97,16 @@ def get_answers_from_form(form):
     }
 # Confirm answers 
 def answers_are_complete(answers):
-    return all(Value for value in answers.values())
+    return all(value for value in answers.values())
 
 # creating profile from answers 
 def build_user_profile(answers):
     profile = []
 
     for key, value in answers.items():
-        label = PROFIL_LABELS.get(key, {}).get(value)
+        label = PROFILE_LABELS.get(key, {}).get(value)
         if label:
-            profile,append(label)
+            profile.append(label)
 
     return profile
 
@@ -141,6 +141,8 @@ def score_standard_match(film, answers):
         score += WEIGHTS["pick_type"] 
         reasons.append("fit the kind of pick you wanted")
 
+    return score, reasons
+
 # Surprise me button config
 def add_surprise_bonus(film_copy, answers):
     if answers["pick_type"] != "surprise":
@@ -149,7 +151,7 @@ def add_surprise_bonus(film_copy, answers):
 
 # Build for copy on results panels routing
 def score_film(film, answers):
-    score, reasons - score_standard_match(film, answers)
+    score, reasons = score_standard_match(film, answers)
 
     film_copy = film.copy()
     film_copy["score"] = score
@@ -163,11 +165,12 @@ def score_film(film, answers):
 
 # Back up recommendations ranking build
 
-def get_ranked_recommenations(answes, limit=3):
+def get_ranked_recommenations(answers, limit=3):
     scored_films = [score_film(film, answers) for film in FILMS]
 
     scored_films.sort(
         key=lambda item: (item["score"], item["year"]),
+        reverse=True
     )
 
     return scored_films[:limit]
@@ -219,7 +222,7 @@ def results():
         flash("Please answer all five questions before continuing.")
         return render_template("quiz.html", title="Find a Film")
     
-    recommendations = get_ranked_recommenations(answers, limit = 3)
+    recommendations = get_ranked_recommenations(answers, limit=3)
     top_pick = recommendations[0]
     backup_picks = recommendations[1:]
     user_profile = build_user_profile(answers)
