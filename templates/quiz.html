@@ -12,7 +12,7 @@
 
 
 <!-- QUESTION Card 1-->
-<form id="quizForm">
+<form id="quizForm" action="{{ url_for('results')}}" method="POST" novalidate>
 <div class="question-card active">
     <h1>What kind of mood are you in tonight?</h1>
 <p class="question-intro">This will help us find the perfect movie for you.</p>
@@ -76,7 +76,7 @@
     <label><input type="radio" name="runtime" value="short">I want a short movie</label>
     <label><input type="radio" name="runtime" value="medium">I want a medium-length movie</label>
     <label><input type="radio" name="runtime" value="long">I want a long movie</label>
-     <label><input type="radio" name="runtime" value="medium">Length doesn't matter</label>
+     <label><input type="radio" name="runtime" value="any">Length doesn't matter</label>
 </div>
 
 
@@ -95,7 +95,7 @@
     <label><input type="radio" name="pick_type" value="crowd">A crowd-pleaser</label>
     <label><input type="radio" name="pick_type" value="critics">Critically acclaimed</label>
     <label><input type="radio" name="pick_type" value="hidden">I want a hidden gem</label>
-    <label><input type="radio" name="pick_type" value="surpise">Surprise me</label>           
+    <label><input type="radio" name="pick_type" value="surprise">Surprise me</label>           
 </div>
 
 

@@ -325,6 +325,7 @@ margin-top: 1.1rem ;
 .tag,
 .label-title,
 .submission-form label,
+.card-subtitle,
 .card-title {
 font-family: "Bungee", sans-serif;
 }
@@ -369,7 +370,8 @@ font-weight: bold;
 .label-title,
 .submission-form label,
 .card-title,
-.section-title {
+.section-title 
+.card-subtitle {
     color: #d95555;
     margin-bottom: 0;
 }
