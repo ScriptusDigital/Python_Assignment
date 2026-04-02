@@ -48,6 +48,12 @@ def random():
 def quiz():
     return render_template('quiz.html', title="Find a Film")
 
+
+@app.route('/results')
+def results():
+    return render_template('results.html', title="Results")
+
+
 if __name__ == "__main__":
     debug_flag = str(os.environ.get("DEBUG", "False")).lower() in ("1", "true", "yes")
     app.run(debug=debug_flag)

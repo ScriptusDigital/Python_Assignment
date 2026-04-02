@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page">
+        <div class="panel panel-section">
+            <p class="kicker">Your Recommendation</p>
+            <h1 class="section-title"> Your top pick for tonight </h1>
+            <p>This app built a preference profile from your answers
+                and compared it with the feature profile of each film in the 
+                library. This was your strongest overall match.
+            </p>
+        </div>
+
+<div class="results-layout">
+    <aside class="panel panel-pad">
+        <h2 class="card-title">Your profile tonight</h2>
+   <ul class="profile-list">
+    PLACE HOLDER FOR USER PROFILE
+    <li> ITEM PLACEHOLDER</li>
+   </ul>
+
+<div class="process-note">
+    <h3 class="label-title">How it was chosen</h3>
+    <p>Your answers were combined into a weighted preference
+        profile, then compared against each film to find the best fit across 
+        multiple traits.
+    </p>
+</div>
+</aside>
+
+<article class="panel panel-pad">
+    <span class="tag">   PLACEHOLDER</span>
+    <h2 class="card-title"> TOP PICK PLACEHOLER
+    <span class="year">YEAR PLACE HOLDER</span></h2>
+    <p> TOP PICK DESCRIPTION PLACEHOLDER</p>
+
+
+<div class="score-row">
+<p class="match-score">Overall Match - PLACEHOLDER</p>
+    </div>
+
+<div class="reason-box">
+<h3 class="label-title">Why this matched well</h3>
+<ul>
+<li>
+
+PLACE HOLDER FOR PICK
+</li>
+</ul>
+</div>
+</article>
+    </div>
+
+    <section class="backup-picks">
+        <h2 class="card-title">Other strong matches</h2>
+        <div class="card-grid">
+
+<article class="panel panel-pad">
+<span class="tag"> GENRE PLACEHOLDER</span>
+
+<h3 class="card-subtitle"> FILM TITLE PLACEHOLDER</h3>
+<p>FILM DESCRIPTION PLACEHOLDER</p>
+<p class="match-score">Match PLACEHOLDER</p>
+<ul class="mini-reasons">
+    PLACE HOLDer FOR REASONS
+    <li>REASON</li>
+    </ul>
+
+</article>
+
+        </div>
+    </section>
+
+
+<div class="actions">
+    <a href="{{url_for('quiz')}}" class="btn">Try Again</a>
+    <a href="{{url_for('random')}}" class="btn">Try a Random Pick</a>
+</div>
+</section>
+
+
+
+
+    {% endblock %}
