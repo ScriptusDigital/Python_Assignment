@@ -79,7 +79,7 @@ max-width: 70%;
 font-family: "Bungee", sans-serif;
     margin-top: 5px;
     margin-bottom: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 line-height: 1;
 color: #d95555;
 letter-spacing: 0.02em;
@@ -177,8 +177,7 @@ border-top: 2px solid #6ea7ff;
 
 
 /*-----------HERO BODY-----------*/
-.hero {
-padding-top: 1.4rem;}
+
 
 .hero-copy {
 max-width: 1040px;
