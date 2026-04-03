@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const progressText = document.getElementById('progressText');
     const progressBar = document.getElementById('progressBar');
-    const quizMessage = document.getElementById('quizMessage'); 
 
 let currentCard = 0;
 
@@ -21,10 +20,24 @@ if (menuToggle && mainNav) {
     });
 }
 
-//Quiz Buttons - 
+
+
+
+
+
+//Quiz Buttons 
 //Based on tutorials from https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css//
 //https://www.w3schools.com/howto/howto_js_form_steps.asp //
 //https://webdesign.tutsplus.com/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342t//
+
+//Validation messagae element for unanswered quiz questions
+function getCurrentQuizMessage() {
+const currentCardElement = cards[currentCard];
+if (!currentCardElement) return null;
+return currentCardElement.querySelector('.quiz-message');
+}
+
+//Show next card and update progress bar
 
 function showCard(index) {
     cards.forEach((card, i) => {
@@ -44,9 +57,10 @@ if(progressText) {
         progressBar.style.width = `${width}%`;
     }
 
-    if (quizMessage) {
-        quizMessage.textContent = "";
-    }
+  const quizMessage = getCurrentQuizMessage();
+  if (quizMessage) {
+     quizMessage.textContent = "";
+  }
     }
 
 
@@ -62,6 +76,7 @@ function currentQuestionAnswered(index) {
 nextButtons.forEach(button => {
     button.addEventListener('click', () => {
     if (!currentQuestionAnswered(currentCard)) {
+     const quizMessage = getCurrentQuizMessage();
         if (quizMessage) {
             quizMessage.textContent = "Please answer the question before proceeding.";
         }
@@ -87,6 +102,7 @@ if (quizForm) {
     quizForm.addEventListener('submit', (e) => {
 if (!currentQuestionAnswered(currentCard)) {
     e.preventDefault();
+    const quizMessage = getCurrentQuizMessage();
     if (quizMessage) {
         quizMessage.textContent = "Please answer the question before submitting.";
     }

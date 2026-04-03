@@ -238,7 +238,7 @@ padding: 0.7rem 0.7rem;
     border: 2px solid #6ea7ff;
     border-radius: 10px;
 background: #f0c75e;
-    color: #071b44;
+    color: #19449a;
 font-family: "Bungee", sans-serif;
     font-size: 1rem;
     text-transform: uppercase;
@@ -387,8 +387,9 @@ font-family: "Bungee", sans-serif;
 
 /*-----------Shared Text elements-----------*/
 .match-score,
-.quiz-message,
+
 .section-title,
+.quiz-message, 
 .tag,
 .label-title,
 .submission-form label,
@@ -575,15 +576,31 @@ accent-color: #000000;
 
 .actions-end {
     justify-content: flex-end;
+
 }
 
 .quiz-message {
-margin-top: 0.75rem;
+margin: 0;
 color: #d95555;
-font-size: 1.2rem;
+font-size: 1.2rem; 
+margin-left:0.4rem;
  justify-content: center;
+ flex: 1;
 }
 
+.quiz-actions-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.65rem;
+}
+
+.quiz-actions-row .actions {
+    margin-top: 0;
+    flex-shrink: 0;
+    padding-bottom: 0.75rem;
+}
 
 /*-----------Quiz Progress Tracker-----------*/
 
@@ -749,6 +766,28 @@ border-radius: 12px
     text-align: center;
     }
 
+
+    .quiz-actions-row {
+flex-direction: column;
+align-items: stretch;
+
+}
+    .quiz-actions-row .actions {
+        width:100%
     }
+
+
+    .quiz-message {
+        order: -1;
+    }
+}
+
+
+   
+
+
+
+
+
 
 
