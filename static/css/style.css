@@ -21,7 +21,7 @@ body {
 }
 
 body.theatre-theme {
-background-image: url('../images/Lobby.jpg');
+background-image: url('../images/Lobby_resized.jpg');
 background-size: cover;
 background-position: center;
 background-attachment: fixed;
