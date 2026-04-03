@@ -33,7 +33,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2007,
         "description": "A fast, funny action-comedy set in an absurdly dangerous English village.",
-        "poster": "hot-fuzz.jpg"
+        "poster": "hot-fuzz.jpeg"
     },
     {
         "title": "Edge of Tomorrow",
@@ -45,7 +45,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2014,
         "description": "A smart, entertaining sci-fi action film built around a time loop.",
-        "poster": "edge-of-tomorrow.jpg"
+        "poster": "edge-of-tomorrow.jpeg"
     },
     {
         "title": "Little Miss Sunshine",
@@ -57,7 +57,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2006,
         "description": "A warm, offbeat family comedy about failure, hope, and a disastrous road trip.",
-        "poster": "little-miss-sunshine.jpg"
+        "poster": "little-miss-sunshine.jpeg"
     },
     {
         "title": "Zodiac",
@@ -69,7 +69,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2007,
         "description": "A meticulous investigative thriller about obsession, uncertainty, and a killer who stays just out of reach.",
-        "poster": "zodiac.jpg"
+        "poster": "zodiac.jpeg"
     },
     {
         "title": "Before Sunrise",
@@ -81,7 +81,7 @@ FILMS =[
         "pick_type": "hidden",
         "year": 1995,
         "description": "A tender, talk-driven romance built around one night of connection between two strangers.",
-        "poster": "before-sunrise.jpg"
+        "poster": "before-sunrise.jpeg"
     },
     {
         "title": "Mad Max: Fury Road",
@@ -93,7 +93,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2015,
         "description": "A relentless action spectacle driven by survival, speed, and astonishing visual energy.",
-        "poster": "mad-max-fury-road.jpg"
+        "poster": "mad-max-fury-road.jpeg"
     },
     {
         "title": "Lady Bird",
@@ -105,7 +105,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2017,
         "description": "A sharp, heartfelt coming-of-age film about identity, ambition, and difficult family love.",
-        "poster": "lady-bird.jpg"
+        "poster": "lady-bird.jpeg"
     },
     {
         "title": "Moon",
@@ -117,7 +117,7 @@ FILMS =[
         "pick_type": "hidden",
         "year": 2009,
         "description": "A quiet and intelligent science-fiction drama about isolation, identity, and human worth.",
-        "poster": "moon.jpg"
+        "poster": "moon.jpeg"
     },
     {
         "title": "Knives Out",
@@ -129,7 +129,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2019,
         "description": "A witty modern whodunit full of sharp dialogue, family dysfunction, and clever reversals.",
-        "poster": "knives-out.jpg"
+        "poster": "knives-out.jpeg"
     },
     {
         "title": "Drive",
@@ -141,7 +141,7 @@ FILMS =[
         "pick_type": "hidden",
         "year": 2011,
         "description": "A stylish, moody crime thriller balancing tenderness, violence, and cool restraint.",
-        "poster": "drive.jpg"
+        "poster": "drive.jpeg"
     },
     {
         "title": "The Grand Budapest Hotel",
@@ -153,7 +153,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2014,
         "description": "A playful, meticulously crafted comedy about loyalty, chaos, and a vanished old world.",
-        "poster": "the-grand-budapest-hotel.jpg"
+        "poster": "the-grand-budapest-hotel.jpeg"
     },
     {
         "title": "Prisoners",
@@ -165,7 +165,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2013,
         "description": "A dark, gripping thriller about desperation, morality, and the cost of taking justice personally.",
-        "poster": "prisoners.jpg"
+        "poster": "prisoners.jpeg"
     },
     {
         "title": "Booksmart",
@@ -177,7 +177,7 @@ FILMS =[
         "pick_type": "crowd",
         "year": 2019,
         "description": "A lively, funny coming-of-age comedy about friendship, panic, and one last chaotic night.",
-        "poster": "booksmart.jpg"
+        "poster": "booksmart.jpeg"
     },
     {
         "title": "Her",
@@ -189,7 +189,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2013,
         "description": "A melancholy, intimate love story exploring technology, loneliness, and emotional connection.",
-        "poster": "her.jpg"
+        "poster": "her.jpeg"
     },
     {
         "title": "The Nice Guys",
@@ -201,7 +201,7 @@ FILMS =[
         "pick_type": "hidden",
         "year": 2016,
         "description": "A breezy detective comedy with chaotic chemistry, ridiculous violence, and plenty of charm.",
-        "poster": "the-nice-guys.jpg"
+        "poster": "the-nice-guys.jpeg"
     },
     {
         "title": "Nightcrawler",
@@ -213,7 +213,7 @@ FILMS =[
         "pick_type": "critics",
         "year": 2014,
         "description": "A tense, unsettling thriller about ambition, media voyeurism, and moral collapse.",
-        "poster": "nightcrawler.jpg"
+        "poster": "nightcrawler.jpeg"
     },
     {
         "title": "Once",
@@ -225,7 +225,7 @@ FILMS =[
         "pick_type": "hidden",
         "year": 2007,
         "description": "A small, sincere romance carried by music, longing, and beautifully understated emotion.",
-        "poster": "once.jpg"
+        "poster": "once.jpeg"
     }
 ]
 
