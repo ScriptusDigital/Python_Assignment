@@ -18,7 +18,7 @@ body {
  flex-direction: column;
  font-family: Arial, Helvetica, sans-serif;
  font-weight: 600;
- line-height: 1.5;
+ line-height: 1.4;
  color: #20182f
 }
 
@@ -376,16 +376,14 @@ font-family: "Bungee", sans-serif;
 }
 
 .backup-card .match-score{
-  margin-top: 0.75rem;
+  margin-top: 0.45rem;
 
 }
 .mini-reasons {  
     margin-top: 0.45rem;
     padding-left: 1.1rem;}
 
-.mini-reasons li + li {    
-    margin-top: 0.25rem;
-}
+
 
 /*-----------Shared Text elements-----------*/
 .match-score,
@@ -444,7 +442,8 @@ margin-bottom: 0.25rem;
 
 .card-title {
         color: #d95555;
-    margin-bottom: 0.65rem;
+        margin-top: 0.25rem;
+    margin-bottom: 0.15rem;
 }
 
 .section-title {
@@ -458,7 +457,7 @@ margin-bottom: 0.25rem;
 
 .label-title {
     margin-top: 0.2rem;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.2rem;
     font-size: 1rem;
     line-height: 1.20;
     text-transform: uppercase;
@@ -467,7 +466,7 @@ margin-bottom: 0.25rem;
 
 
 .text-block p + p {
-    margin-top: 0.85rem;
+    margin-top: 0.65rem;
 }
 
 
@@ -632,8 +631,8 @@ background: rgba(239, 233, 255, 0.84);
 
 .tag {
     display: inline-block;
-    margin-bottom: 0.8rem;
-  
+        margin-top: 0.2rem;
+    margin-bottom: 0.4rem;
     padding: 0.3rem 0.75rem;
     border: 2px solid #6ea7ff;
     border-radius: 999px;
@@ -662,8 +661,8 @@ gap: 0.75rem;
 }
 
 
-.profile-list li + li,
-.mini-reasons li + li, 
+
+
 .reason-box li + li {
     margin-top: 0.3rem;
 }
