@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () =>    {
 
 let currentCard = 0;
 
-//Menu Toggle//
+//Menu Toggle - based on https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0//
 if (menuToggle && mainNav) {
     menuToggle.addEventListener("click", () => {
     const isOpen = mainNav.classList.toggle("open");
@@ -21,7 +21,11 @@ if (menuToggle && mainNav) {
     });
 }
 
-//Quiz Buttons//
+//Quiz Buttons - 
+//Based on tutorials from https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css//
+//https://www.w3schools.com/howto/howto_js_form_steps.asp //
+//https://webdesign.tutsplus.com/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342t//
+
 function showCard(index) {
     cards.forEach((card, i) => {
       card.classList.toggle('active', i === index);
@@ -44,7 +48,6 @@ if(progressText) {
         quizMessage.textContent = "";
     }
     }
-
 
 
 function currentQuestionAnswered(index) {

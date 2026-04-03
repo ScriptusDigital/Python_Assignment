@@ -223,7 +223,7 @@ max-width: 1040px;
     background: #f0c75e;
     color: #4271d0;
 font-family: "Bungee", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer ;
     transition: 0.2s ease;  
@@ -587,7 +587,7 @@ background: rgba(239, 233, 255, 0.84);
 }
 
 
-/*-----------Results elements-----------*/
+/*-----------Results page elements-----------*/
 
 .results-layout {
     display: grid;
@@ -633,6 +633,29 @@ gap: 0.75rem;
 .mini-reasons, 
 .reason-box ul {
     padding-left: 1rem;
+}
+
+
+.profile-list li + li,
+.mini-reasons li + li, 
+.reason-box li + li {
+    margin-top: 0.3rem;
+}
+
+
+/*-----------Random selection page elements-----------*/
+.random-stage {
+    margin-top: 1.4rem;
+}
+
+.random-card {
+    max-width: 760px;
+}
+
+.random-note {
+    margin-top: 0.9rem;
+    color: #5a5375;
+    font-style: italic
 }
 
 

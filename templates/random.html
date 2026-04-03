@@ -1,5 +1,43 @@
 {% extends "base.html" %}
-
 {% block content %}
+
+<section class="page">
+<div class="panel panel-section narrow">
+<h1 class="section-title">Let the App decide</h1>
+<p>Not every film night needs analysis. Here is one random
+    recommendation from the library. Don't like it? Hit the button 
+    below for another random pick.
+</p>
+</div>
+
+<div class="random-stage">
+    <article class="panel panel-pad random-card">
+<h2 class="card-title">Tonight's wild-card pick</h2>
+
+<span class="tag"> {{ random_film.genre }}</span>
+<h3 class="card-subtitle"> {{ random_film.title }}
+<span class="year"> {{ random_film.year }} </span></h3>
+<p> {{random_film.description}}</p>
+
+<div class="actions">
+    <a href="{{ url_for('random_movie')}}" class="btn">Pick Another at Random</a>
+    <a href="{{ url_for('quiz')}}" class="btn">Build My Recommendation Instead</a>
+</div>
+
+
+
+    </article>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
 
     {% endblock %}
