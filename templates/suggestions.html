@@ -27,12 +27,12 @@
 {% if suggested_movies %}
 <div class="panel panel-section narrow suggestions-list-panel">
 <p class="kicker">Recent Suggestions</p>
-<h2 class="section-title">What others have suggested</h2>
+<h2 class="card-title">What others have suggested</h2>
 
 <div class="feature-grid">
     {% for movie in suggested_movies %}
     <article class="feature-card">
-        <h3>{{ movie.title }}</h3>
+        <h3 class="card-subtitle">{{ movie.title }}</h3>
         <p><strong>Genre:</strong> {{ movie.genre }}</p>
         <p>{{ movie.reason }}</p>
     </article>

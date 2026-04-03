@@ -6,7 +6,7 @@
         <div class="panel panel-section">
             <p class="kicker">Your Recommendation</p>
             <h1 class="section-title"> Your top pick for tonight </h1>
-            <p>This app built a preference profile from your answers
+            <p>The app built a preference profile from your answers
                 and compared it with the feature profile of each film in the 
                 library. This was your strongest overall match.
             </p>
@@ -30,12 +30,21 @@
 </div>
 </aside>
 
-<article class="panel panel-pad">
+<article class="panel panel-pad top-pick-card">
     <span class="tag"> {{ top_pick.genre }}</span>
     <h2 class="card-title"> {{ top_pick.title }}
-    <span class="year">{{ top_pick.year }}</span></h2>
-    <p> {{ top_pick.description }}</p>
+    <span class="year">{{ top_pick.year }}</span>
+</h2>
 
+
+<div class="poster-wrap">
+    <img src="{{url_for('static', filename='images/posters/' + top_pick.poster )}}"
+    alt="{{top_pick.title}} poster"
+    class="film-poster"
+    >
+</div>
+
+    <p> {{ top_pick.description }}</p>
 
 <div class="score-row">
 <p class="match-score">Overall Match - {{ top_pick.match_percent }}%</p>
@@ -61,7 +70,7 @@
  {% for film in backup_picks %}
 
 
-<article class="panel panel-pad">
+<article class="panel panel-pad back-up card">
 <span class="tag"> {{ film.genre }}</span>
 <h3 class="card-subtitle"> {{film.title}}</h3>
 <p>{{ film.description }}</p>

@@ -1,5 +1,5 @@
-//Event listeners pages//
-document.addEventListener('DOMContentLoaded', () =>    {
+//Page event listeners//
+document.addEventListener('DOMContentLoaded', () => {
     const menuToggle = document.getElementById('menuToggle');
     const mainNav = document.getElementById('mainNav');
     const quizForm = document.getElementById('quizForm');

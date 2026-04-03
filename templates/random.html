@@ -15,8 +15,18 @@
 <h2 class="card-title">Tonight's wild-card pick</h2>
 
 <span class="tag"> {{ random_film.genre }}</span>
-<h3 class="card-subtitle"> {{ random_film.title }}
-<span class="year"> {{ random_film.year }} </span></h3>
+
+<h3 class="card-subtitle"> 
+{{ random_film.title }}<span class="year"> {{ random_film.year }} </span>
+</h3>
+
+
+<div class="poster-wrap">
+    <img src=" {{url_for('static', filename='images/posters/' + random_film.poster )}}"
+    alt="{{random_film.title}} poster"
+    class="film-poster">
+</div>
+
 <p> {{random_film.description}}</p>
 
 <div class="actions">
