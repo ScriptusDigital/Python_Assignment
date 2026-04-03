@@ -75,7 +75,9 @@ backdrop-filter: blur(2px);
 .logo {
 max-width: 70%;
 font-family: "Bungee", sans-serif;
-font-size: 2rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 3rem;
 line-height: 1;
 color: #d95555;
 letter-spacing: 0.02em;
@@ -311,7 +313,7 @@ text-transform: uppercase;
 font-family: "Bungee", sans-serif;
     font-size: 1rem;
     color: #d95555;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     line-height: 1.15;
 }
 
@@ -373,7 +375,7 @@ font-family: "Bungee", sans-serif;
 
 .backup-card .match-score{
   margin-top: 0.75rem;
-    margin-bottom: 0.45rem;
+
 }
 .mini-reasons {  
     margin-top: 0.45rem;
@@ -408,11 +410,10 @@ font-family: "Bungee", sans-serif;
 
 .kicker {
 display: inline-block;
-margin-bottom: 0.2rem;
 padding: 0.35rem 0.8rem;
 border: 2px solid #6ea7ff;
 border-radius: 999px;
-
+font-size: clamp(0.6rem, 2vw, 2rem);
 background: #f0c75e;
 font-size: 0.78rem;
 letter-spacing: 0.05em;
@@ -450,7 +451,6 @@ font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 0.45rem;
     font-family: "Bungee", sans-serif;
-        margin-top: 0.45rem;
     text-shadow: 0 1px 6px rgba(255, 255, 255, 0.16);;
 }
 
