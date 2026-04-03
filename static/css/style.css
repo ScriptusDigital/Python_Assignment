@@ -209,12 +209,12 @@ max-width: 1040px;
 .hero-text {
     max-width: 68ch;
     margin-top: 0.55rem;
-    padding: 0.95rem 1rem;
+    padding: 0.7rem 0.7rem;
     border: 2px solid rgba(110, 167,255, 0.85);
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.64);
     font-size: 1.05rem;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 
@@ -235,7 +235,7 @@ max-width: 1040px;
 /*-----------Buttons-----------*/
 .btn {
     display: inline-block;
-    padding: 0.9rem 1.4rem;
+padding: 0.7rem 0.7rem;
     border: 2px solid #6ea7ff;
     border-radius: 10px;
     background: #f0c75e;
@@ -306,7 +306,7 @@ padding: 1rem;
 
 .feature-grid {
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
@@ -415,14 +415,14 @@ display: inline-block;
 padding: 0.35rem 0.8rem;
 border: 2px solid #6ea7ff;
 border-radius: 999px;
-font-size: clamp(0.6rem, 2vw, 2rem);
+font-size: clamp(0.6rem, 0.6vw, 0.4rem);
 background: #f0c75e;
-font-size: 0.78rem;
+
 letter-spacing: 0.05em;
 text-transform: uppercase;
 font-family: "Archivo Black", sans-serif;
 font-weight: bold;
-
+margin-bottom: 0.25rem;
 }
 
 
