@@ -40,7 +40,7 @@ Display fonts were used to create a bold, theatrical feel with supporting text u
 Film posters are displayed on the recommendation and random movie pages to make the results feel more visually engaging. The poster images were stored locally in the static images folder and linked to each film entry in the Python film library structure. The background image was designed to reinforce the multiplex setting. 
 
 ## Development Process
-###Project planning
+### Project planning
 The project did not begin as a full recommendation system. My original idea was to build a Flask site with a film theme and a couple of interactive elements, mainly a random film recommendation generator and a contact form. On starting the build, I realised the original contact-form idea could be better repurposed into a suggestion feature whereby users can input a film title, genre, and a reason for inclusion, and those submitted values could be processed in Flask and displayed back on the page. 
 
 Because I was already building a film library as a structured Python data set, I saw that the same data could be better used for a recommendation system. That shifted the project from being mainly a themed multi-page site into a quiz-based recommender application. Drawing on some of the same ideas I had used in my early JavaScript quiz assignment, I planned a short sequence of questions to collect user preferences and compare them against the stored film attributes. 
@@ -60,16 +60,16 @@ Instead, I used a weighted scoring model. The user’s answer is compared direct
 
 ### Building the film library
 Each film was stored in Python as a structured dictionary containing:
--title
--genre
--mood
--pace
--focus
--runtime
--pick_type
--year
--description
--poster filename
+- title
+- genre
+- mood
+- pace
+- focus
+- runtime
+- pick_type
+- year
+- description
+- poster filename
 
 I defined the parameter structure for the library and then used Claude AI to generate sample film entries that matched those parameters. 
 
@@ -85,10 +85,10 @@ The quiz uses DOM selection, event listeners, and step logic to show one questio
 
 
 ## Challenges Faced
-###Connecting back-end logic to front-end templates
+### Connecting back-end logic to front-end templates
 The biggest challenge was ensuring all parts of the Python script connected properly to the templates. Because the project depends on routes, template variables, structured dictionaries, form submission, and dynamic rendering, even small naming mismatches created app failure. 
 
-###Layout testing in Flask
+### Layout testing in Flask
 Unlike with a static front-end workflow with live preview, changes to the Flask app required rerunning or refreshing through the Python server. This made design iteration slower, especially when adjusting page layout, spacing, and route-linked content. 
 
 ## Resources Used
@@ -102,7 +102,7 @@ Unlike with a static front-end workflow with live preview, changes to the Flask 
 ### Recommendation logic research
 - [DataCamp - Beginner Tutorial: Recommender Systems in Python ](https://www.datacamp.com/tutorial/recommender-systems-python)
 -[StrataScratch - Step-by-Step Guide to Building Content-Based Filtering](https://www.stratascratch.com/blog/step-by-step-guide-to-building-content-based-filtering)
--[Real Python - Build a Recommendation Engine With Collaborative Filtering	(https://realpython.com/build-recommendation-engine-collaborative-filtering/
+-[Real Python - Build a Recommendation Engine With Collaborative Filtering](https://realpython.com/build-recommendation-engine-collaborative-filtering/
 )
 - [Weighted Scoring System Repo](https://github.com/windowshopr/Weighted-Scoring-System-Repo/blob/main/main.py)
 
