@@ -36,7 +36,6 @@
     <span class="year">{{ top_pick.year }}</span>
 </h2>
 
-
 <div class="poster-wrap">
     <img src="{{url_for('static', filename='images/posters/' + top_pick.poster )}}"
     alt="{{top_pick.title}} poster"
@@ -69,7 +68,6 @@
   <div class="card-grid">
  {% for film in backup_picks %}
 
-
 <article class="panel panel-pad backup-card">
 <span class="tag"> {{ film.genre }}</span>
 <h3 class="card-subtitle"> {{film.title}}</h3>
@@ -88,14 +86,9 @@
         </div>
     </section>
 
-
 <div class="actions">
     <a href="{{url_for('quiz')}}" class="btn">Try Again</a>
     <a href="{{url_for('random_movie')}}" class="btn">Try a Random Pick</a>
 </div>
 </section>
-
-
-
-
     {% endblock %}
