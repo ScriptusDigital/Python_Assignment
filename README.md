@@ -3,7 +3,7 @@
 **What Should I Watch Tonight?**
 
 ## Project Description
-What Should I Watch Tonight? is a Flask-based film recommendation web application that helps users choose a movie through either a short interactive quiz or a random selector feature. The site combines Python back-end logic with HTML, CSS, and JavaScript front-end interactivity to create a themed recommendation experience inspired by the look and feel of a 1990s multiplex cinema. 
+What Should I Watch Tonight? is a Flask-based film recommendation web application that helps users choose a movie through either a short interactive quiz or a random selector feature. The site combines Python back-end logic with HTML, CSS, and JavaScript front-end interactivity to create a themed recommendation experience inspired by the look and feel of a 1990s multipƒlex cinema. 
 
 The project demonstrates core Flask concepts such as routing, template rendering, form handling, POST requests, and dynamic content generation alongside front-end techniques including multi-step form interaction, responsive layout, navigation toggling, and styled feedback messages. 
 
@@ -92,21 +92,21 @@ The biggest challenge was ensuring all parts of the Python script connected prop
 Unlike with a static front-end workflow with live preview, changes to the Flask app required rerunning or refreshing through the Python server. This made design iteration slower, especially when adjusting page layout, spacing, and route-linked content. 
 
 ## Resources Used
-###Navigation menu
+### Navigation menu
 - [Easy hamburger menu with JS](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 ## JavaScript multi-step quiz form
 -[CSS-Tricks - How to create multi-step forms with Javascript and CSS](https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css)
 - [W3Schools- How to: For with multiple steps](https://www.w3schools.com/howto/howto_js_form_steps.asp)
 - [Tuts+ - How to build a multi-step form wizard with JavaScript](https://webdesign.tutsplus.com/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342t)
 
-###Recommendation logic research
+### Recommendation logic research
 - [DataCamp - Beginner Tutorial: Recommender Systems in Python ](https://www.datacamp.com/tutorial/recommender-systems-python)
 -[StrataScratch - Step-by-Step Guide to Building Content-Based Filtering](https://www.stratascratch.com/blog/step-by-step-guide-to-building-content-based-filtering)
 -[Real Python - Build a Recommendation Engine With Collaborative Filtering	(https://realpython.com/build-recommendation-engine-collaborative-filtering/
 )
 - [Weighted Scoring System Repo](https://github.com/windowshopr/Weighted-Scoring-System-Repo/blob/main/main.py)
 
-###Images and media
+### Images and media
 - Film poster images sourced from: [fanart.tv](https://fanart.tv/)
 - Background image ‘Lobby_resized2.jpeg’ and ‘favicon.png’ generated in ChatGPT
 
@@ -126,6 +126,7 @@ This project is available at:
 [GitHub Repository](https://github.com/ScriptusDigital/Python_Assignment)
 
 ## Live deployment site
+The application is available at: 
 [Live App](https://python-assignment-bc40.onrender.com)
 
 
