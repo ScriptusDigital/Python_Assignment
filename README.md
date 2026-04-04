@@ -101,7 +101,7 @@ Unlike with a static front-end workflow with live preview, changes to the Flask 
 
 ### Recommendation logic research
 - [DataCamp - Beginner Tutorial: Recommender Systems in Python ](https://www.datacamp.com/tutorial/recommender-systems-python)
--[StrataScratch - Step-by-Step Guide to Building Content-Based Filtering](https://www.stratascratch.com/blog/step-by-step-guide-to-building-content-based-filtering)
+- [StrataScratch - Step-by-Step Guide to Building Content-Based Filtering](https://www.stratascratch.com/blog/step-by-step-guide-to-building-content-based-filtering)
 -[Real Python - Build a Recommendation Engine With Collaborative Filtering](https://realpython.com/build-recommendation-engine-collaborative-filtering/
 )
 - [Weighted Scoring System Repo](https://github.com/windowshopr/Weighted-Scoring-System-Repo/blob/main/main.py)
