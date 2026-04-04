@@ -20,11 +20,6 @@ if (menuToggle && mainNav) {
     });
 }
 
-
-
-
-
-
 //Quiz Buttons 
 //Based on tutorials from https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css//
 //https://www.w3schools.com/howto/howto_js_form_steps.asp //

@@ -34,7 +34,7 @@ The visual style was designed to evoke the atmosphere of a 1990s multiplex cinem
 A cinema-inspired palette was used throughout the project. Reds, blues, gold tones, and light panel backgrounds were used to create contrast against the darker photographic background while still allowing the content to remain readable and accessibility friendly. 
 
 ### Fonts
-Display fonts were used to create a bold, theatrical feel with supporting text using an easily readable sans-serif styling. The fonts used were chosen to balance strong visual identity with practical readability.
+The display fonts Bungee was used to create a bold, theatrical feel with supporting text using an easily readable sans-serif styling. The paragraph and subtitle fonts (Exo 2, Archivo) used were chosen to balance strong visual identity with practical readability.
 
 ### Images/Graphics
 Film posters are displayed on the recommendation and random movie pages to make the results feel more visually engaging. The poster images were stored locally in the static images folder and linked to each film entry in the Python film library structure. The background image was designed to reinforce the multiplex setting. 
@@ -124,6 +124,10 @@ The project makes use of:
 ## Deployed site
 This project is available at: 
 [GitHub Repository](https://github.com/ScriptusDigital/Python_Assignment)
+
+## Deployment on Render
+This project is deployed on Render using the linked GitHub repository. The application reads config values such as `SECRET_KEY` and `DEBUG`
+from environment variables, which can be set through the Render dashboard. The live deployed version is available through the link below. 
 
 ## Live deployment site
 The application is available at: 
