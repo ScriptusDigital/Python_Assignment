@@ -108,7 +108,7 @@ Unlike with a static front-end workflow with live preview, changes to the Flask 
 
 ### Images and media
 - Film poster images sourced from: [fanart.tv](https://fanart.tv/)
-- Background image ‘Lobby_resized2.jpeg’ and ‘favicon.png’ generated in ChatGPT
+- Background image ‘Lobby8.jpg’ and ‘favicon.jpg’ generated in ChatGPT
 
 ## Development Notes
 ### Flask functionality used
