@@ -1,6 +1,8 @@
 # Project Title
 
 **What Should I Watch Tonight?**
+
+## Project Description
 What Should I Watch Tonight? is a Flask-based film recommendation web application that helps users choose a movie through either a short interactive quiz or a random selector feature. The site combines Python back-end logic with HTML, CSS, and JavaScript front-end interactivity to create a themed recommendation experience inspired by the look and feel of a 1990s multiplex cinema. 
 
 The project demonstrates core Flask concepts such as routing, template rendering, form handling, POST requests, and dynamic content generation alongside front-end techniques including multi-step form interaction, responsive layout, navigation toggling, and styled feedback messages. 
