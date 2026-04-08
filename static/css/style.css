@@ -584,10 +584,11 @@ accent-color: #000000;
 .quiz-message {
 margin: 0;
 color: #d95555;
-font-size: 1.2rem; 
+font-size: 1.1rem; 
 margin-left:0.4rem;
  justify-content: center;
  flex: 1;
+ padding-bottom: 0.5rem;
 }
 
 .quiz-actions-row {
@@ -595,7 +596,8 @@ margin-left:0.4rem;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    margin-top: 0.65rem;
+    margin-top: 0.5rem;
+
 }
 
 .quiz-actions-row .actions {
@@ -772,6 +774,8 @@ border-radius: 12px
     .quiz-actions-row {
 flex-direction: column;
 align-items: stretch;
+    margin-top: 0.9rem;
+
 
 }
     .quiz-actions-row .actions {
