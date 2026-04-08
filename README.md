@@ -95,7 +95,7 @@ Unlike with a static front-end workflow with live preview, changes to the Flask 
 ### Navigation menu
 - [Easy hamburger menu with JS](https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0)
 ## JavaScript multi-step quiz form
--[CSS-Tricks - How to create multi-step forms with Javascript and CSS](https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css)
+- [CSS-Tricks - How to create multi-step forms with Javascript and CSS](https://css-tricks.com/how-to-create-multi-step-forms-with-vanilla-javascript-and-css)
 - [W3Schools- How to: For with multiple steps](https://www.w3schools.com/howto/howto_js_form_steps.asp)
 - [Tuts+ - How to build a multi-step form wizard with JavaScript](https://webdesign.tutsplus.com/how-to-build-a-multi-step-form-wizard-with-javascript--cms-93342t)
 
