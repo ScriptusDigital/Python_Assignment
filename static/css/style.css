@@ -360,9 +360,11 @@ font-family: "Bungee", sans-serif;
 
 .backup-card .tag {
     margin-bottom: 0.65rem;
+    
 }
 
 .backup-card .card-subtitle {
+
     margin-bottom: 0.45rem;
     font-size: 1.2rem;
     line-height: 1.05;
@@ -396,7 +398,8 @@ font-family: "Bungee", sans-serif;
 .label-title,
 .submission-form label,
 .card-subtitle,
-.card-title {
+.card-title,
+.random-tag {
 font-family: "Bungee", sans-serif;
 }
 
@@ -418,11 +421,9 @@ border: 2px solid #6ea7ff;
 border-radius: 999px;
 font-size: clamp(0.6rem, 0.6vw, 0.4rem);
 background: #f0c75e;
-
 letter-spacing: 0.05em;
 text-transform: uppercase;
 font-family: "Archivo Black", sans-serif;
-font-weight: bold;
 margin-bottom: 0.25rem;
 }
 
@@ -442,6 +443,10 @@ margin-bottom: 0.25rem;
     margin-bottom: 0;
 }
 
+.card-subtitle 
+{
+    margin-top: 0.40rem;
+}
 
 .card-title {
         color: #d95555;
@@ -460,7 +465,7 @@ margin-bottom: 0.25rem;
 
 .label-title {
     margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    margin-bottom: 0.rem;
     font-size: 1rem;
     line-height: 1.20;
     text-transform: uppercase;
@@ -652,7 +657,6 @@ background: rgba(239, 233, 255, 0.84);
 
 .tag {
     display: inline-block;
-        margin-top: 0.2rem;
     margin-bottom: 0.4rem;
     padding: 0.3rem 0.75rem;
     border: 2px solid #6ea7ff;
@@ -662,6 +666,8 @@ background: rgba(239, 233, 255, 0.84);
     font-size: 0.8rem;
     text-transform: uppercase;
 }
+
+
 
 .year {
     color: #666666;
@@ -718,9 +724,6 @@ border-radius: 12px
   line-height: 1.45;
 }
 
-.random-card {
-    max-width: 760px;
-}
 
 
 /*-----------Random selection page elements-----------*/
@@ -741,6 +744,19 @@ border-radius: 12px
     font-style: italic
 }
 
+.random-tag
+{
+    display: inline-block;
+       margin-top: 0.45rem;
+    margin-bottom: 0.2rem;
+    padding: 0.3rem 0.75rem;
+    border: 2px solid #6ea7ff;
+    border-radius: 999px;
+    background: rgba(238, 244, 255, 0.76);
+    color: #4271d0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
 
 /*-----------RESPONSIVE-----------*/
 @media (max-width: 900px) {
